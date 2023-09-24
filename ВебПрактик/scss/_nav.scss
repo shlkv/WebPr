@@ -1,0 +1,229 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+}
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 46px 0;
+}
+.nav__logo {
+    width: 182px;
+    height: 84px;
+}
+.nav__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.nav__link {
+    margin-right: 60px;
+    color: #000;
+    font-family: 'Alegreya', serif;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.nav__link:hover{
+    color: $red;
+}
+
+.nav__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.nav__contact {
+    display: flex;
+    align-items: end;
+    margin-right: 62px;
+    h3{
+        color: #000;
+        font-family: Alegreya;
+        font-weight: 900;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+   
+    img{
+        margin-right: 12px;
+        width: 40px;
+        height: 40px;
+    }
+    svg{
+        margin-right: 12px;
+        width: 40px;
+        height: 40px;
+    }
+    p{
+        color: #848A9A;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px
+    }
+}
+.nav__contact--phone {
+    h3{
+
+        font-size: 24px;
+        letter-spacing: 1.333px;
+    }
+}
+.nav__contact--order {
+    position: relative;
+
+   
+    h3{
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+}
+.nav__contact--order::before{
+    content: "3";
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    background: $red;
+    position: absolute;
+    z-index: 66;
+    top: -5px;
+    left: 20px;
+}
+.nav__contact--language {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background: #EFF0F1;
+    p{
+        text-align: center;
+        line-height: 48px;
+        font-family: Alegreya;
+        font-size: 18px;
+        font-weight: 900;
+    }
+}
+
+// навигация для планшета и телефона
+
+.nav__mobile {
+    display: none;
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+}
+.nav__container {
+}
+
+.nav__btn--opener {
+}
+
+.nav__mobile--menu {
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 340px;
+    background: #313945;
+    z-index: 999;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 64px 40px;
+    display: flex;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+ 
+}
+
+.nav__menu--logo{
+    position: absolute;
+    display: none;
+}
+.nav__btn--closer {
+    position: absolute;
+    top: 44px;
+    right: 36px;
+}
+.nav__mobile--links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: auto;
+    width: 100%;
+    a{  
+        width: 100%;
+        color: #FFF;
+        text-align: center;
+        font-family: Alegreya;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #1D2228;
+        margin-top: 24px;
+        padding-bottom: 24px;
+    }
+    a:last-of-type{  
+      border: none;
+    }
+}
+.nav__mobile--contacts {
+    text-align: center;
+    p{
+        color: #A8B0BC;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px; /* 150% */
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    h4{
+        color: #FFF;
+        font-family: Alegreya;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: 1.333px;
+        text-transform: uppercase;
+    }
+    h5{
+        color: #A8B0BC;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px; /* 150% */
+    }
+}
+.nav__mobile--language {
+    display: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Alegreya;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.667px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,86 @@
+.stocks {
+
+    margin-bottom: 112px;
+}
+.stocks__cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stocks__card {
+    width: 32%;
+    h4{
+        margin-top: 12px;
+        text-align: left;
+    }
+    p{
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 14px;
+    }
+}
+.stocks__mobile--slider {
+    display: none;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    input{
+        display: none;
+    }
+  }
+  
+  .stocks__sliders {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .stocks__slide {
+    flex: 0 0 100%;
+  }
+  
+  
+  .stocks__sliders--nav {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .stocks__sliders--nav label {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #DFE3EB;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .stocks__mobile--slider input[type="radio"]#stocks__slide1:checked ~ .stocks__sliders {
+    transform: translateX(0);
+  }
+  .stocks__mobile--slider input[type="radio"]#stocks__slide1:checked ~ .stocks__sliders--nav label:nth-child(1),
+  .stocks__mobile--slider input[type="radio"]#stocks__slide2:checked ~ .stocks__sliders--nav label:nth-child(2),
+  .stocks__mobile--slider input[type="radio"]#stocks__slide3:checked ~ .stocks__sliders--nav label:nth-child(3) {
+    background-color: red; /* Цвет активного индикатора */
+  }
+  
+  .stocks__mobile--slider input[type="radio"]#stocks__slide2:checked ~ .stocks__sliders {
+    transform: translateX(-100%);
+  }
+  .stocks__mobile--slider input[type="radio"]#stocks__slide2:checked ~ .stocks__sliders--nav label:nth-child(2),
+  .stocks__mobile--slider input[type="radio"]#stocks__slide3:checked ~ .stocks__sliders--nav label:nth-child(3) {
+    background-color: red; /* Цвет активного индикатора */
+  }
+  
+  .stocks__mobile--slider input[type="radio"]#stocks__slide3:checked ~ .stocks__sliders {
+    transform: translateX(-200%);
+  }
+  .stocks__mobile--slider input[type="radio"]#stocks__slide3:checked ~ .stocks__sliders--nav label:nth-child(3) {
+    background-color: red; /* Цвет активного индикатора */
+  }

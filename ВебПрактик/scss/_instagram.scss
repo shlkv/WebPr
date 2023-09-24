@@ -1,0 +1,24 @@
+.intagram {
+    text-align: center;
+}
+.instagram__title {
+    margin-bottom: 13px;
+}
+.instagram__link {
+    color: #848A9A;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 30px; /* 125% */
+    
+}
+.instagram__container {
+    margin-top: 46px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.instagram__container--img {
+    width: 20%;
+}

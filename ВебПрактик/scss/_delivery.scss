@@ -1,0 +1,44 @@
+.delivery {
+    background: #F8F6F3;
+    padding: 72px 0 80px 0;
+}
+
+.delivery__title {
+}
+.delivery__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+.delivery__card {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 2px 5px 0px rgba(199, 193, 168, 0.30);
+    width: 416px;
+    height: 144px;
+    display: flex;
+    align-items: center;
+}
+.delivery__card--img {
+    width: 80px;
+    height: 80px;
+    margin: 0 24px;
+}
+.delivery__card--text {
+    h3{
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Alegreya;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 30px; /* 125% */
+    }
+    p{
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px; /* 150% */
+    }
+}
