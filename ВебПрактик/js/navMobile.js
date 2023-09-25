@@ -13,19 +13,14 @@ closerBtn.addEventListener('click', function() {
 
 mobileNavLinks.forEach(link => {
   link.addEventListener('click', function() {
-    // Получите элемент мобильного меню по его идентификатору (предположим, что меню имеет id "mobileMenu")
     const mobileMenu = document.getElementById('mobileMenu');
 
-    // Закройте мобильное меню, например, с помощью CSS-свойства transform
     mobileMenu.style.transform = 'translateX(100%)';
   });
 });
 
 mobileNavLinks.forEach(link => {
   link.addEventListener('click', function() {
-    // Получите элемент мобильного меню по его идентификатору (предположим, что меню имеет id "mobileMenu")
-
-    // Закройте мобильное меню, например, с помощью CSS-свойства transform
     mobileMenu.style.transform = 'translateX(100%)';
   });
 });

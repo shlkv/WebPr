@@ -1,4 +1,4 @@
-let value = 1; // начальное значение
+let value = 1;
 
 function increaseValue(id, buttonId)  {
   let valueElement = document.getElementById(id);
@@ -17,7 +17,7 @@ function decreaseValue(id, buttonId) {
   let valueElement = document.getElementById(id);
   let value = parseInt(valueElement.innerHTML);
   let buttonElement = document.getElementById(buttonId);
-  if (value > 1) { // проверяем, что значение больше нуля
+  if (value > 1) { 
     value--;
     valueElement.innerHTML = value;
     if (value === 1) {
@@ -30,8 +30,3 @@ function decreaseValue(id, buttonId) {
 
 
 
-// if (value = 1) {
-//     buttonElement.disabled = true;
-//   } else {
-//     buttonElement.disabled = false;
-//   

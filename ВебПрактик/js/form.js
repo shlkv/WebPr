@@ -12,7 +12,7 @@ hideFormBtn.addEventListener("click", () => {
   myForm.style.display = "none"; // скрываем форму при клике на кнопку
 });
 form__submiter.addEventListener("click", () => {
-  myForm.style.display = "none"; // скрываем форму при клике на кнопку
+  myForm.style.display = "none"; 
 });
 
 
