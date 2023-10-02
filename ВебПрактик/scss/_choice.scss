@@ -11,8 +11,6 @@
     }
 }
 
-.choice__title {
-}
 .choice__filters {
     width: 520px;
     margin: 40px auto 40px;
@@ -63,7 +61,8 @@
 .choice__card{
     position: relative;
     width: 304px;
-    height: 572px;
+    flex-grow: 1;
+    // height: 572px;
     border-radius: 5px;
     background: #FFF;
     box-shadow: 0px 2px 5px 0px rgba(165, 169, 176, 0.30);
@@ -225,10 +224,11 @@
 .choice__item--body{
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
-.choice__card:nth-of-type(n+9) .choice__item--body{
-    height: 293px;
-}
+// .choice__card:nth-of-type(n+9) .choice__item--body{
+//     height: 293px;
+// }
 
 .choice__item--price {
     margin-bottom: 12px;
